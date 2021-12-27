@@ -12,7 +12,7 @@ Terms
 **Edge** is the connection between one node and the other node
 
 An example of a tree
-` 8 <---- Root and also parent
+8 <---- Root and also parent
 / \ <---- edge (they only point down to the children)
 5 15 <----Child and also parent (5 and 15 are siblings)
 / \ / \
