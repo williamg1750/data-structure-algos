@@ -11,7 +11,6 @@ class BinarySearchTree {
   constructor() {
     this.root = null;
   }
-  //function to insert a new node into the tree
   insert(value) {
     let newNode = new Node(value);
     //conditional to check if there is a root node if not make the newNode into the rootnode and returns
@@ -19,6 +18,7 @@ class BinarySearchTree {
       this.root = newNode;
       return this;
     }
+    //currentNode is a placholder to keep track of the current node in the while loop
     let currentNode = this.root;
     while (currentNode) {
       if (value < currentNode.value) {
@@ -36,6 +36,20 @@ class BinarySearchTree {
         currentNode = currentNode.right;
       }
     }
+  }
+  lookUp(value) {
+    if (!this.root) return 'tree doesnt exist';
+    let currentNode = this.root;
+    while (currentNode) {
+      if (value < currentNode.value) {
+        currentNode = currentNode.left;
+      } else if (value > currentNode.value) {
+        currentNode = currentNode.right;
+      } else if (value === currentNode.value) {
+        return currentNode;
+      }
+    }
+    return false;
   }
 }
 
