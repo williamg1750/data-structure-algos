@@ -5,14 +5,14 @@ Rules for defining a tree
 -A tree can only have one root node (the top parent)
 
 Terms
--Child is directly connected to another node moving away from the Root
--Parent is the converse notion of a child
--Sibling is a group of nodes with the same parent
--Leaf is a node with no children
--Edge is the connection between one node and the other node
+**Child** is directly connected to another node moving away from the Root
+**Parent** is the converse notion of a child
+**Sibling** is a group of nodes with the same parent
+**Leaf** is a node with no children
+**Edge** is the connection between one node and the other node
 
 An example of a tree
-8 <---- Root and also parent
+` 8 <---- Root and also parent
 / \ <---- edge (they only point down to the children)
 5 15 <----Child and also parent (5 and 15 are siblings)
 / \ / \
